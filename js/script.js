@@ -26,6 +26,9 @@ let processArr = [];
 displayClear();
 
 eql.addEventListener('click', function () {
+    for (i = 0; i < processArr.length; i++) {
+        processArr[i] = processArr[i].replace("×", "*");
+    }
 	let str = eval(processArr.join(""));
 	result.textContent = str;
 });
@@ -58,7 +61,7 @@ divide.addEventListener('click', function () {
 });
 
 multiply.addEventListener('click', function () {
-	startingOperator("*");
+	startingOperator("×");
 });
 
 minus.addEventListener('click', function () {
