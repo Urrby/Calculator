@@ -127,9 +127,9 @@ button:hover {
 }
 
 #process {
-	color: rgba(0,0,0,0.5);	
-    overflow: auto;
+	color: rgba(0,0,0,0.5);
     width: 249px;
+    overflow-wrap: break-word;
 }
 
 #result {
